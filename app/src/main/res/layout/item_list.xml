@@ -2,42 +2,32 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="16dp"
+    android:padding="8dp"
     android:background="?android:attr/selectableItemBackground"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+
     <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:id="@+id/imageViewFoto"
         android:scaleType="centerCrop"
-        tools:src="@drawable/a"/>
+        tools:src="@drawable/a"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:alpha="0.3"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="160dp"
+        android:gravity="center"
         android:text="JUDUL"
+        android:textColor="@android:color/white"
         android:id="@+id/textViewJudul"
-        android:layout_below="@+id/imageViewFoto"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imageViewFoto"
-        android:layout_toEndOf="@+id/imageViewFoto"
-        android:layout_marginLeft="80dp"
-        android:layout_marginStart="80dp"
-        android:maxLines="1"
-        android:ellipsize="end"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="DESKRIPSI"
-        android:layout_below="@+id/textViewJudul"
-        android:layout_alignLeft="@+id/textViewJudul"
-        android:layout_alignStart="@+id/textViewJudul"
-        android:maxLines="2"
-        android:ellipsize="end"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:id="@+id/textViewDeskripsi" />
 </RelativeLayout>
